@@ -1,0 +1,387 @@
+body{
+    font-family: myriad-pro, sans-serif; 
+    color: #1f1f1f;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+::-moz-selection {
+    color: white;
+    background: #0040b8;
+  }
+  
+::selection {
+    color: white;
+    background: #0040b8;
+}
+.wjezdza{
+    animation: wjazd 1.5s ease-in-out;
+}
+@keyframes wjazd {
+    0%{
+        position: relative;
+        transform: translateY(300px);
+        opacity: 0;
+        filter:blur(3)
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+        filter: none;
+    }
+}
+nav{
+    display: flex;
+    width: calc(100vw - 96px );
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18pt;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-inline: 48px;
+    position: fixed;
+    color: white;
+    z-index: 2;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    margin-right: 1em;
+}
+nav li:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185)
+}
+.socials svg:first-child{
+    margin-right: 10px;
+}
+.socials .facebook:hover{
+    color: rgb(58, 58, 255);
+}
+.socials .instagram:hover{
+    color: rgb(255, 70, 255);
+}
+.brand{
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+.chude{
+    background: rgb(37, 37, 37, 0.7);
+    backdrop-filter: blur(3px);
+    width: calc(100vw - 96px );
+    margin-top: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* color: rgb(216, 216, 216); */
+    color: white;
+    animation: 0.4s ease-in-out chudniecie forwards;
+}
+@keyframes chudniecie {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.baner{
+    background-image: url('/img/baner.webp');
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.baner div{
+    margin-left: 150px;
+    color: white;
+    animation: michas 0.4s ease-in-out;
+}
+.baner h1{
+    font-size: 46pt;
+}
+.baner em{
+    font-size: 24pt;
+    text-align: center;
+    background: black;
+}
+.baner img{
+    animation: michas 0.4s ease-in-out;
+}
+@keyframes michas {
+    0%{
+        position: relative;
+        transform: translateY(300px);
+        opacity: 0;
+        filter: blur(3)
+    }
+    100%{
+        position: relative;
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0)
+    }
+}
+#toggler{
+    cursor: pointer;
+    display: none;
+}
+#toggler div{
+    width: 48px;
+    height: 3px;
+    background: white;
+}
+#toggler div:first-child{
+    margin-bottom: 10px;
+}
+main{
+    /* width: 80vw;
+    margin-inline: auto; */
+    width: 100vw;
+}
+main h2{
+    font-size: 36pt;
+}
+#omnie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-inline: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#omnie .text{
+    margin-left: 3em;
+    font-size: 18pt;
+}
+#plan{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #eeeded
+}
+#plan header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#plan header p{
+    font-size: 16pt;
+    text-align: center;
+}
+.program ul{
+    width: 80vw;
+    font-size: 18pt;
+    margin-inline: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    border-left: 10px solid #073fa6;
+}
+.program li::before{
+    position: absolute;
+    left: calc(10vw - 44px);
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: #073fa6;
+    border-radius: 50%;
+
+}
+.kanapy{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 28pt;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
+    margin-inline: auto;
+}
+#kontakt{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 100px;
+    font-size: 18pt;
+}
+#kontakt a{
+    text-decoration: underline;
+}
+#opinie{
+    background-color: #eeeded;
+    width: 100vw;
+    padding-top: 100px;
+    /* display: flex; 
+    justify-content: center;
+    flex-direction: column; */
+}
+#opinie .osoba{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    font-size: 18pt;
+    padding-bottom: 100px;
+    margin-inline: auto;
+}
+#opinie img{
+    border-radius: 50%;
+    width: 500px;
+    margin-right: 2em;
+}
+.karol img{
+    width: 500px;
+    height: 500px;
+}
+footer{
+    background: rgb(37, 37, 37);
+    color: gray;
+    font-size: 14pt;
+    padding: 30px;
+}
+@media(max-width: 1000px){
+    .socials{
+        display: none;
+    }
+    .baner{
+        flex-direction: column;
+    }
+    .baner img{
+        margin-top: 70px;
+        width: 50%;
+        border-bottom: 3px solid white;
+        padding-bottom: 15px;
+        /* flt: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+    .baner div{
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 50%;
+        text-align: center;
+    } 
+    .baner h1{
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    #toggler{
+        display: block;
+    }
+    .otwarte{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        animation: otwieranie 1s ease-in-out forwards;
+    }
+    .otwarte ul{
+        display: block;
+    }
+    .otwarte #toggler{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 48px;
+    }
+    .otwarte #toggler div{
+        background: red;
+    }
+    .otwarte li{
+        display: block;
+        font-size: 48px;
+        margin-right: none;
+        margin-top: 1em;
+    }
+    .otwarte .brand{
+        font-size: 60px;
+    }
+    .otwarte .socials{
+        margin-top: 2em;
+        display: block;
+    }
+    #omnie{
+        flex-direction: column;
+    }
+    #omnie img{
+        width: 90%;
+    }
+    #omnie .text{
+        margin-inline: 15px;
+    }
+    .kanapy{
+        flex-direction: column;
+    }
+    .kanapy img{
+        width: 80vw;
+    }
+    #opinie .osoba{
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    #opinie img{
+        margin-bottom: 2em;
+        margin-right: 0;
+        width: 80vw;
+        height: 80vw;
+    }
+    #opinie .karol{
+        flex-direction: column-reverse!important;
+    }
+    #kontakt img{
+        margin-inline: auto;
+        width: 90vw;
+        height: 90vw;
+    }
+    #kontakt ul{
+        padding: 0;
+    }
+    #kontakt{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.spot{
+    width: 100vw;
+    margin-bottom: 100px;
+}
+.spot video{
+    margin-left: 10vw;
+    width: 80vw;
+}
+@keyframes otwieranie {
+    0%{
+        transform: translateY(-100vh);
+        border-bottom: 100vh solid #0040b8;
+    }
+    50%{
+        border-bottom: 10px solid #0040b8;
+    }
+    100%{
+        transform: none;
+        border-bottom: none;
+        background: white;
+    }
+}
